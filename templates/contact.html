@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CONTACT US</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+.contact-form {
+    padding: 15px 20px 15px;
+    border: 1px solid #ececec;
+    width: 450px;
+    margin: 50px auto;
+}
+.contact-form .form-header {
+    margin-bottom: 40px;
+}
+.contact-form form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 120px;
+}
+.contact-form form .btn {
+    width: 100%;
+}
+.contact-form .form-header h2 {
+    font-weight: bold;
+    color: #03A9F4;
+}
+
+/*-- CSS for extra small devices--*/
+@media (max-width: 767px){
+.contact-form {
+    width: 90%;
+}
+}
+
+
+    </style>
+</head>
+<body>
+<!--navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Text Utils</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!--      search bar   -->
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!--alert  tittle  -->
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>You can submit your query and feedback..THANK YOU</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<!--contact form-->
+
+<div class="contact-form bg-dark">
+    <div class="form-header text-center">
+        <h2>CONTACT US</h2>
+        <p class="text-info">Submit your Query</p>
+    </div>
+    <form action="/contact" method="get">
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <input type="text" name="fname" placeholder="First Name" class="form-control" required>
+            </div>
+            <div class="form-group col-sm-6">
+                <input type="text" name="lname" placeholder="Last Name" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Email Id" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <input type="text" name="number" placeholder="Mobile Number" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <textarea placeholder="Your Message" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
